@@ -1,8 +1,8 @@
 'use client'
 
 import styles from "@/styles/websites/website.module.css"
-import ShowPosts from "./ShowPosts";
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
+import ShowPosts from "./showPosts";
 
 const Posts = ({ post, slide }) => {
     const slideLeft = () => {
