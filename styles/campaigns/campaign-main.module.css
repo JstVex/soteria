@@ -1,0 +1,124 @@
+.first_section {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    overflow-x: hidden;
+}
+
+.texts {
+    padding: 40px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.subtext {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.button {
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    border: 1px solid orange;
+    padding: 15px;
+    transition: all 500ms;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: 'Roboto', 'serif';
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.imageSection {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 30px 15px;
+    overflow: hidden;
+    animation: scrollAnimation 250s linear infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.imageSection::-webkit-scrollbar {
+    display: none;
+}
+
+.image {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 250px;
+    transition: 500ms all;
+}
+
+.image:nth-child(odd) {
+    border-left: 2px solid orange;
+    border-top: 2px solid orange;
+}
+
+.image:nth-child(even) {
+    margin-top: 250px;
+    border-right: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+
+.heading {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.heading_content {
+    font-size: 1.6rem;
+    text-decoration: underline orange;
+    text-underline-offset: 7px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .image {
+        max-width: 150px;
+        max-height: 200px;
+    }
+
+    .image:nth-child(odd) {
+        margin-bottom: 200px;
+    }
+
+    .image:nth-child(even) {
+        margin-top: 200px;
+    }
+
+    .subtext {
+        width: 100%;
+    }
+}
