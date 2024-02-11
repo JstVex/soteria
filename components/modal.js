@@ -2,7 +2,7 @@ import styles from "@/styles/modal.module.css"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
-const CampaignModal = ({ setSelectedTitle, selectedTitle, selectedImg, selectedStartDate, selectedEndDate, selectedText, selectedName, selectedTarget, selectedUrl, selectedPayment, selectedPrize, selectedForwhom }) => {
+const Modal = ({ setSelectedTitle, selectedTitle, selectedImg, selectedStartDate, selectedEndDate, selectedText, selectedName, selectedTarget, selectedUrl, selectedPayment, selectedPrize, selectedForwhom }) => {
 
     const handleDisappear = (e) => {
         if (e.target.classList.contains('backdrop')) {
@@ -65,4 +65,4 @@ const CampaignModal = ({ setSelectedTitle, selectedTitle, selectedImg, selectedS
     );
 }
 
-export default CampaignModal;
+export default Modal;

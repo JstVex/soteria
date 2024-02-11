@@ -2,8 +2,8 @@
 
 import styles from "@/styles/campaigns/campaign-main.module.css"
 import { useState } from "react";
-import CampaignModal from "./campaignModal";
 import Campaign from "./campaign";
+import Modal from "@/components/modal";
 
 const AllCampaigns = ({ campaigns }) => {
     const [selectedTitle, setSelectedTitle] = useState(null);
@@ -33,7 +33,7 @@ const AllCampaigns = ({ campaigns }) => {
                     })}
                 </div>
             </div>
-            {selectedTitle && <CampaignModal setSelectedTitle={setSelectedTitle} selectedTitle={selectedTitle} selectedImg={selectedImg} selectedStartDate={selectedStartDate} selectedEndDate={selectedEndDate} selectedText={selectedText} selectedName={selectedName} selectedTarget={selectedTarget} selectedUrl={selectedUrl} selectedPayment={selectedPayment} selectedPrize={selectedPrize} selectedForwhom={selectedForwhom} />}
+            {selectedTitle && <Modal setSelectedTitle={setSelectedTitle} selectedTitle={selectedTitle} selectedImg={selectedImg} selectedStartDate={selectedStartDate} selectedEndDate={selectedEndDate} selectedText={selectedText} selectedName={selectedName} selectedTarget={selectedTarget} selectedUrl={selectedUrl} selectedPayment={selectedPayment} selectedPrize={selectedPrize} selectedForwhom={selectedForwhom} />}
         </>
 
     );

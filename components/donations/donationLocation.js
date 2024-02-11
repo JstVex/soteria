@@ -1,9 +1,9 @@
 'use client'
 
-import styles from '@/styles/donations/donations.module.css'
-import CampaignModal from "../campaigns/campaignModal";
+import styles from '@/styles/donations/donations.module.css';
 import Donation from "./donation";
 import { useState } from 'react';
+import Modal from '@/components/modal';
 
 const DonationLocation = ({ donations }) => {
     const [selectedTitle, setSelectedTitle] = useState(null);
@@ -27,7 +27,7 @@ const DonationLocation = ({ donations }) => {
                         setSelectedImg={setSelectedImg} setSelectedStartDate={setSelectedStartDate} setSelectedEndDate={setSelectedEndDate} setSelectedText={setSelectedText} setSelectedName={setSelectedName} setSelectedTarget={setSelectedTarget} setSelectedUrl={setSelectedUrl} setSelectedPayment={setSelectedPayment} />
                 })}
             </div>
-            {selectedTitle && <CampaignModal key={selectedText} setSelectedTitle={setSelectedTitle} selectedTitle={selectedTitle} selectedImg={selectedImg} selectedStartDate={selectedStartDate} selectedEndDate={selectedEndDate} selectedText={selectedText} selectedName={selectedName} selectedTarget={selectedTarget} selectedUrl={selectedUrl} selectedPayment={selectedPayment} />}
+            {selectedTitle && <Modal key={selectedText} setSelectedTitle={setSelectedTitle} selectedTitle={selectedTitle} selectedImg={selectedImg} selectedStartDate={selectedStartDate} selectedEndDate={selectedEndDate} selectedText={selectedText} selectedName={selectedName} selectedTarget={selectedTarget} selectedUrl={selectedUrl} selectedPayment={selectedPayment} />}
         </>
     );
 }
