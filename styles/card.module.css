@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-evenly;
     margin: 30px auto 20px auto;
+    cursor: pointer;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     transition: all 500ms;
 }
