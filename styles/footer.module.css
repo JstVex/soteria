@@ -1,0 +1,59 @@
+.container {
+    background-color: rgb(34, 33, 33);
+    color: white;
+    margin-top: 50px;
+    padding: 25px 50px; 
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.heading {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    row-gap: 5px;
+    color: rgb(222, 222, 222);
+}
+
+.copyright_wrap {
+    max-width: 1000px;
+    margin: 20px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 3px;
+}
+
+.copyright {
+    color: rgb(185, 185, 185);
+}
+
+.dev {
+    color: rgb(228, 228, 228);
+}
+
+.name {
+    color: white;
+}
