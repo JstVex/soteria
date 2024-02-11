@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    width: 100%;
 }
 
 .heading {
@@ -56,4 +57,28 @@
 
 .name {
     color: white;
+}
+
+@media screen and (max-width: 764px) {
+    .container {
+        padding: 25px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+        column-gap: 25px;
+    }
+
+    .copyright_wrap {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 10px;
+    }
 }
