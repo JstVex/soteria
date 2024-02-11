@@ -37,6 +37,16 @@
     color: rgb(222, 222, 222);
 }
 
+.list_item {
+    cursor: pointer;
+    width: fit-content;
+    transition: color 0.3s ease;
+}
+
+.list_item:hover {
+    color: white;
+}
+
 .copyright_wrap {
     max-width: 1000px;
     margin: 20px auto 0px auto;

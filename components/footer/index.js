@@ -68,7 +68,7 @@ const Footer = () => {
                     </h4>
                     <ul className={styles.list}>
                         {links.map((link, index) => (
-                            <li key={index}>
+                            <li key={index} className={styles.list_item}>
                                 <Link href={link.href}>
                                     {link.title}
                                 </Link>
@@ -82,7 +82,7 @@ const Footer = () => {
                     </h4>
                     <ul className={styles.list}>
                         {news.map((news, index) => (
-                            <li key={index}>
+                            <li key={index} className={styles.list_item}>
                                 <a href={news.href} target="_blank">
                                     {news.title}
                                 </a>
@@ -96,7 +96,7 @@ const Footer = () => {
                     </h4>
                     <ul className={styles.list}>
                         {facebookPages.map((page, index) => (
-                            <li key={index}>
+                            <li key={index} className={styles.list_item}>
                                 <a href={page.href} target="_blank">
                                     {page.title}
                                 </a>
