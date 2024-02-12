@@ -64,7 +64,7 @@ export default function Home() {
               Help us light up the future of Myanmar. Join our fight for justice and independence during our Spring Revolution. Stand in solidarity with the brave citizens of Myanmar, empowering them to rebuild and create a brighter tomorrow. Together, let&apos;s build a peaceful and prosperous Myanmar!
             </p>
           </div>
-          <Image src="https://onedrive.live.com/embed?resid=3616EC68410FC656%21829&authkey=%21AIwEZ8VWXGJ3FkQ&width=1364&height=936" width={1000} height={1000} alt="light-the-fire" className={styles.part1_image} />
+          <Image src="/images/light-the-fire.png" width={1000} height={1000} alt="light-the-fire" className={styles.part1_image} />
         </div>
       </section>
       <section className={styles.part2_container}>
