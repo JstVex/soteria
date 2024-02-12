@@ -173,11 +173,36 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    row-gap: 30px;
 }
 
-.flex3 {
+.choose_form {
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+}
+
+.choose_donations,
+.choose_campaigns {
+    font-size: 1.5rem;
+    flex: 1 1 0%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    padding-bottom: 5px;
+    user-select: none;
+}
+
+.choose_donations:hover,
+.choose_campaigns:hover {
+    font-weight: 500;
+}
+
+.selectedForm {
+    border-bottom: 2px solid orange;
+    font-weight: 500;
 }
 
 .add {
