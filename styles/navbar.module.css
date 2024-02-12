@@ -53,6 +53,46 @@
     color: orange;
 }
 
+.mobile_container {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background-color: white;
+    color: black;
+}
+
+.mobile_on {
+    display: block;
+}
+
+.mobile_off {
+    display: none;
+}
+
+.mobile_wrapper {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile_close {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.mobile_links {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style: none;
+}
+
 @media screen and (max-width: 600px) {
     .links {
         display: none;
