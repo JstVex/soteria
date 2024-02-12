@@ -21,6 +21,8 @@ const DonationForm = () => {
     const [payment, setPayment] = useState([]);
     const [imagePreview, setImagePreview] = useState(null);
 
+    const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+
     const handleImageChange = (event) => {
         const file = event.target.files?.[0];
         setImagePreview(file);
@@ -58,15 +60,10 @@ const DonationForm = () => {
                 formData.append('img', img);
             }
 
-            const response = await fetch(`http://localhost:4008/donations`, {
+            const response = await fetch(`${baseUrl}/donations`, {
                 method: 'POST',
                 body: formData
             });
-
-            // if (!response.ok) {
-            //     setError(data.error);
-            //     setEmptyFields(data.emptyFields)
-            // }
 
             if (response.ok) {
                 const data = await response.json();
@@ -92,45 +89,12 @@ const DonationForm = () => {
 
     return (
         <form className={styles.form} encType="multipart/form-data" onSubmit={handleSubmit}>
-            <div className={styles.heading}>
-                Donations
-            </div>
             <div className={styles.form_flex}>
                 <div className={styles.form_flex2}>
                     <label htmlFor="title" className={styles.label}>
                         Title:
                     </label>
                     <input name='title' id='title' type="text" onChange={(e) => setTitle(e.target.value)} value={title} className={`${styles.input} ${emptyFields.includes('title') ? styles.error : ''}`} />
-                </div>
-
-                <div className={styles.form_flex_image}>
-                    <div>
-
-
-                        <label htmlFor="img" className={styles.label2}>
-                            Image:
-                        </label>
-                        <div className={styles.image_wrap}>
-                            <label htmlFor="img" className={styles.image_label}>
-                                Select
-                            </label>
-                            <input
-                                id="img"
-                                type="file"
-                                className={styles.image_input}
-                                name="img"
-                                onChange={handleImageChange}
-                            />
-                        </div>
-                    </div>
-                    {imagePreview && (
-                        <Image
-                            src={URL.createObjectURL(imagePreview)}
-                            alt="Image Preview"
-                            className={styles.image_preview}
-                            width={1000} height={1000}
-                        />
-                    )}
                 </div>
             </div>
 
@@ -165,10 +129,12 @@ const DonationForm = () => {
                 </div>
             </div>
 
-            <label htmlFor="text">
-                Text:
-            </label>
-            <textarea name='text' id='text' type="text" autoCorrect="off" spellCheck="false" onChange={(e) => setText(e.target.value)} value={text} className={`${styles.textarea} ${emptyFields.includes('text') ? `${styles.error}` : ''}`} />
+            <div className={styles.form_flex2}>
+                <label htmlFor="text" className={styles.label}>
+                    Text:
+                </label>
+                <textarea name='text' id='text' type="text" autoCorrect="off" spellCheck="false" onChange={(e) => setText(e.target.value)} value={text} className={`${styles.textarea} ${emptyFields.includes('text') ? `${styles.error}` : ''}`} />
+            </div>
 
             <fieldset className={styles.fieldset}>
                 <legend className={styles.legend}>Choose all available payment methods</legend>
@@ -225,8 +191,33 @@ const DonationForm = () => {
                     <label htmlFor="target" className={styles.label2}>
                         Target:
                     </label>
-                    <input name='target' type="text" id='target' onChange={(e) => setTarget(e.target.value)} value={target} placeholder="Eg. 100,000 mmk or 10 $" />
+                    <input name='target' type="text" id='target' className={styles.input} onChange={(e) => setTarget(e.target.value)} value={target} placeholder="Eg. 100,000 mmk or 10 $" />
                 </div>
+            </div>
+
+            <div className={styles.form_flex_image}>
+                <div className={styles.image_field}>
+                    <div className={styles.image_wrap}>
+                        <label htmlFor="img" className={styles.image_label}>
+                            Upload an image
+                        </label>
+                        <input
+                            id="img"
+                            type="file"
+                            className={styles.image_input}
+                            name="img"
+                            onChange={handleImageChange}
+                        />
+                    </div>
+                </div>
+                {imagePreview && (
+                    <Image
+                        src={URL.createObjectURL(imagePreview)}
+                        alt="Image Preview"
+                        className={styles.image_preview}
+                        width={1000} height={1000}
+                    />
+                )}
             </div>
 
             <button className={styles.button}>
