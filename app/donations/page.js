@@ -252,9 +252,9 @@ const Donations = () => {
                     </button>
                 </div>
                 <div className={styles.imgs}>
-                    <Image src="https://dsm01pap007files.storage.live.com/y4m-6kBajalvnI1jPcL0DBwkc_3KWwyVvnNZG2lpdsbUzrWr3NpEBHmoogY9CZHNGJC1JWVw8DLxnt4GAtj9klnLem3JbBvEMDtcEnvV2j5BY02Yvx-tP_ikNmhIoeKGCP3DVbNziKsFe1WWXWbrTHNgq0SKV4_DiYtpiW0eAObDetf7FqrC40vKvns0yNeY7AC?width=3072&height=3072&cropmode=none" alt="" className={styles.img1} width={1000} height={1000} />
-                    <Image src="https://dsm01pap007files.storage.live.com/y4mxdznUwMS1ag6o1EbP2C4sBddH-sRP_1UIHvJr7jKaInZEicfCU6xZwNp-S3aaKgU_gyRndz2JyUEPifGWPw5_Z7Kpb5r_jNJ3OytYb6TSkYdlhLF-2OuojQdinSLC7n65wupoaHWMoWzcEKMc-oYldtZJCsxXU7dcptP5a_3E-e0svymTQs9oYO50sI8s9ys?width=2392&height=2500&cropmode=none" alt="" className={styles.img1} width={1000} height={1000} />
-                    <Image src="https://dsm01pap007files.storage.live.com/y4m-6kBajalvnI1jPcL0DBwkc_3KWwyVvnNZG2lpdsbUzrWr3NpEBHmoogY9CZHNGJC1JWVw8DLxnt4GAtj9klnLem3JbBvEMDtcEnvV2j5BY02Yvx-tP_ikNmhIoeKGCP3DVbNziKsFe1WWXWbrTHNgq0SKV4_DiYtpiW0eAObDetf7FqrC40vKvns0yNeY7AC?width=3072&height=3072&cropmode=none" alt="" className={styles.img1} width={1000} height={1000} />
+                    <Image src="https://image.cnbcfm.com/api/v1/image/106839739-1613123898137-gettyimages-1231113111-AFP_92T7M6.jpeg?v=1613302267" alt="" className={styles.img1} width={1000} height={1000} />
+                    <Image src="https://s.abcnews.com/images/International/children-myanmar-01-gty-iwb-210402_1617371953484_hpMain_16x9_1600.jpg" alt="" className={styles.img1} width={1000} height={1000} />
+                    <Image src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/YNO64J3ITFLORGND37NJYHGEIA.jpg" alt="" className={styles.img1} width={1000} height={1000} />
                 </div>
             </div>
             <div className={styles.second_section_ammo} >
@@ -269,11 +269,11 @@ const Donations = () => {
                         We can donate to some directly or through individuals or organizations who are doing as much as they can to support not just our PDFs in rural areas but also UGs who are working underground in major cities.
                     </div>
                 </div>
-                <Image className={styles.img} src="https://dsm01pap007files.storage.live.com/y4m-6kBajalvnI1jPcL0DBwkc_3KWwyVvnNZG2lpdsbUzrWr3NpEBHmoogY9CZHNGJC1JWVw8DLxnt4GAtj9klnLem3JbBvEMDtcEnvV2j5BY02Yvx-tP_ikNmhIoeKGCP3DVbNziKsFe1WWXWbrTHNgq0SKV4_DiYtpiW0eAObDetf7FqrC40vKvns0yNeY7AC?width=3072&height=3072&cropmode=none" alt="" width={1000} height={1000} />
+                <Image className={styles.img} src="https://www.theglobeandmail.com/files/interactive/world/features/myanmar/images/TWZYRHFKA5GRZDOIS6GKCLXZGU_portrait_sm.jpg" alt="" width={1000} height={1000} />
             </div>
 
             <div className={styles.second_section_refugee}>
-                <Image className={styles.img} src="https://dsm01pap007files.storage.live.com/y4m-6kBajalvnI1jPcL0DBwkc_3KWwyVvnNZG2lpdsbUzrWr3NpEBHmoogY9CZHNGJC1JWVw8DLxnt4GAtj9klnLem3JbBvEMDtcEnvV2j5BY02Yvx-tP_ikNmhIoeKGCP3DVbNziKsFe1WWXWbrTHNgq0SKV4_DiYtpiW0eAObDetf7FqrC40vKvns0yNeY7AC?width=3072&height=3072&cropmode=none" alt="" width={1000} height={1000} />
+                <Image className={styles.img} src="https://s.abcnews.com/images/International/children-myanmar3-02-gty-iwb-210402_1617372495777_hpEmbed_3x2_992.jpg" alt="" width={1000} height={1000} />
                 <div className={styles.wrap2}>
                     <div className={styles.title}>
                         Food, shelter and needs for our war victims
@@ -301,7 +301,7 @@ const Donations = () => {
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quas, non voluptas blanditiis dolores deleniti unde facere explicabo, maiores neque ratione architecto laborum quia quam minus reprehenderit. Beatae, blanditiis minus.
                     </div>
                 </div>
-                <Image className={styles.img} src="https://dsm01pap007files.storage.live.com/y4m-6kBajalvnI1jPcL0DBwkc_3KWwyVvnNZG2lpdsbUzrWr3NpEBHmoogY9CZHNGJC1JWVw8DLxnt4GAtj9klnLem3JbBvEMDtcEnvV2j5BY02Yvx-tP_ikNmhIoeKGCP3DVbNziKsFe1WWXWbrTHNgq0SKV4_DiYtpiW0eAObDetf7FqrC40vKvns0yNeY7AC?width=3072&height=3072&cropmode=none" alt="" width={1000} height={1000} />
+                <Image className={styles.img} src="https://images.unsplash.com/photo-1616990631818-93ec3312f55a?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width={1000} height={1000} />
             </div>
 
             <div className={styles.third_section}>
